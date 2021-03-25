@@ -1,13 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
+import Header from './Wrapper/Header';
+import Footer from './Wrapper/Footer';
+import Main from './AppBody/Main';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+    <Header/>
+      <Route exact path="/" component={Main} />
+      <Route exact path="/about" component={Main} />
+    <Footer/>
+  </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );

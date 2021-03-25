@@ -1,0 +1,39 @@
+.Header {
+    position: relative;
+    height: 100px;
+    width: 100%;
+    background-color: skyblue
+}
+
+.Footer {
+    height: 30px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+}
+
+.Footer > p {
+    color:snow;
+    display:block;
+   width:150px;
+   height: 100%;
+   margin: 0 auto;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+#root {
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 20px;
+}
+
+.Main {
+    text-align: center;
+    position: relative;
+}
